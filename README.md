@@ -14,7 +14,7 @@ A lightweight creator campaign analytics tool that pulls real data from YouTube 
 ### 1. Clone and configure
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/SamAustin924/hardscope-analytics.git
 cd hardscope-analytics
 
 cp .env.example .env
