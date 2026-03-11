@@ -4,7 +4,7 @@ A lightweight creator campaign analytics tool that pulls real data from YouTube 
 
 ---
 
-## Quick Start (< 5 minutes)
+## Quick Start 
 
 ### Prerequisites
 - Node.js 22+ and npm (requires `node:sqlite`, built-in since Node 22)
@@ -200,17 +200,3 @@ Tests cover:
 - All API endpoints — 200 responses, filter behavior, 404 handling, pagination limits
 
 ---
-
-## What I'd Build With Another Week
-
-1. **Real campaign ingestion** — connect to a media buying platform (e.g., AspireIQ, Grin) or let brand managers upload CSVs with actual spend/conversion data rather than seeded samples.
-
-2. **Creator search by topic** — use YouTube's `search.list` endpoint (more quota-intensive) to discover creators in a given category, not just a hardcoded list.
-
-3. **Email/Slack alerting** — when an engagement drop alert fires, send a Slack webhook or SendGrid email to the partnerships team instead of just flagging in the UI.
-
-4. **Historical export** — CSV/JSON export endpoint for any filtered creator set, so brand managers can pull data into their existing reporting tools.
-
-5. **Postgres + Redis** — migrate to Postgres for multi-server scale and add a Redis cache in front of the analytics endpoints (summary/top-performers) to reduce DB load.
-
-6. **Auth layer** — JWT-based auth so this can be safely deployed as a shared team tool rather than a local dev server.
